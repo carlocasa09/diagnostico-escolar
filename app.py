@@ -68,8 +68,8 @@ st.markdown("""
 
 # --- CONFIGURACIÓN DE SEGURIDAD (SECRETS) ---
 try:
-    GROQ_API_KEY = st.secrets["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"]
-    MI_PASSWORD = st.secrets["uoyt ykql kjcf pvtb"]
+    GROQ_API_KEY = st.secrets["GROQ_KEY"]
+    MI_PASSWORD = st.secrets["EMAIL_KEY"]
 except:
     st.error("⚠️ Error de configuración: No se encontraron las claves en los Secrets de Streamlit.")
     st.stop()
